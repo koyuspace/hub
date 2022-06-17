@@ -1,0 +1,160 @@
+{
+    "users": {
+        "koyuchan": {
+            "services": [
+                "mastodon",
+                "gemini",
+                "web",
+                "telegram",
+                "chat",
+                "mail",
+                "stream",
+                "xmpp",
+                "nordcast"
+            ],
+            "web": "web",
+            "gemini": "koyu"
+        },
+        "Shorl": {
+            "services": [
+                "mastodon",
+                "telegram",
+                "chat",
+                "mail",
+                "xmpp",
+                "nordcast"
+            ]
+        },
+        "TastyTentacles": {
+            "services": [
+                "mastodon",
+                "web",
+                "telegram",
+                "chat",
+                "xmpp",
+                "nordcast"
+            ],
+            "web": "tastytentacles"
+        },
+        "Pukima": {
+            "services": [
+                "mastodon",
+                "gemini",
+                "telegram",
+                "chat",
+                "xmpp",
+                "nordcast"
+            ],
+            "gemini": "pukima"
+        },
+        "Einhjeriar": {
+            "services": [
+                "mastodon",
+                "telegram",
+                "chat",
+                "xmpp",
+                "nordcast",
+                "stream"
+            ]
+        },
+        "fyrfaras": {
+            "services": [
+                "mastodon",
+                "telegram",
+                "chat",
+                "xmpp",
+                "nordcast",
+                "stream"
+            ]
+        },
+        "cronomaestro": {
+            "services": [
+                "mastodon",
+                "telegram",
+                "chat",
+                "xmpp",
+                "nordcast",
+                "gemini"
+            ],
+            "gemini": "cronomaestro"
+        },
+        "blu256": {
+            "services": [
+                "mastodon",
+                "telegram",
+                "chat",
+                "xmpp",
+                "nordcast",
+                "gemini"
+            ],
+            "gemini": "blu256"
+        },
+        "seek": {
+            "services": [
+                "mastodon",
+                "telegram",
+                "chat",
+                "xmpp",
+                "nordcast",
+                "gemini"
+            ],
+            "gemini": "SEEK"
+        },
+        "bartf1969": {
+            "services": [
+                "mastodon",
+                "telegram",
+                "chat",
+                "xmpp",
+                "nordcast",
+                "gemini"
+            ],
+            "gemini": "bartf1969"
+        },
+        "default": {
+            "services": [
+                "mastodon",
+                "telegram",
+                "chat",
+                "xmpp",
+                "nordcast"
+            ]
+        }
+    },
+    "services": {
+        "mastodon": {
+            "url": "https://koyu.space",
+            "title": "Mastodon"
+        },
+        "gemini": {
+            "title": "Gemini",
+            "icon": "gem"
+        },
+        "web": {
+            "title": "Web",
+            "icon": "globe"
+        },
+        "telegram": {
+            "url": "https://t.me/+xIh9r2VqrD9mYmJk",
+            "title": "Telegram"
+        },
+        "chat": {
+            "title": "Chat",
+            "icon": "comments"
+        },
+        "mail": {
+            "title": "Mail",
+            "icon": "envelope"
+        },
+        "stream": {
+            "title": "koyu.space Stream",
+            "icon": "video-camera"
+        },
+        "xmpp": {
+            "title": "XMPP"
+        },
+        "nordcast": {
+            "title": "Nordcast"
+        }
+    }
+}

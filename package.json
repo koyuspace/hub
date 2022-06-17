@@ -1,0 +1,22 @@
+{
+  "name": "koyuspace-hub",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "deploy": "vercel deploy --prod"
+  },
+  "devDependencies": {
+    "astro": "^1.0.0-beta.47"
+  },
+  "dependencies": {
+    "@astrojs/vercel": "^0.2.3",
+    "@astrojs/vue": "^0.1.5",
+    "vercel": "^25.1.0",
+    "vue": "^3.2.37",
+    "xhr2": "^0.2.1"
+  }
+}
