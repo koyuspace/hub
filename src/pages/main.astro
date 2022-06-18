@@ -3,6 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import Service from '../components/service.astro';
 import data from '../data/data.json';
 import Logo from '../components/logo.astro';
+import Navigation from '../components/navigation.astro';
 const users = data.users;
 const services = data.services;
 
@@ -38,6 +39,7 @@ let resolveAcc = (s = undefined) => {
 <script src="../ts/username.ts"></script>
 
 <Layout>
+	<Navigation isloggedin="true" />
 	<main>
 		<h1>Welcome <span id="name" />!</h1>
 		<p>These are your services</p>

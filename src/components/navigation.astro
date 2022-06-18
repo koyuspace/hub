@@ -1,10 +1,23 @@
+---
+let styles1 = "";
+let styles2 = "";
+if (Astro.props.isloggedin !== "true") {
+    styles1 = "display:none;";
+} else {
+    styles2 = "display:none;";
+}
+---
 <script src="../ts/navigation.ts"></script>
 <nav>
     <ul>
         <li><a href="/"><i class="fa fa-home" aria-hidden="true" /></a></li>
-        <div class="right">
+        <div class="right" style={styles1}>
             <li class="except"><a href="https://koyu.space/settings/profile" target="_blank"><img id="avatar" height="38"></a></li>
             <li><a href="#" id="logout"><i class="fa fa-sign-out" aria-hidden="true" /></a></li>
+        </div>
+        <div class="right" style={styles2}>
+            <li><a href="/login">Login</a></li>
+            <li><a href="https://koyu.space/auth/sign_up">Sign Up</a></li>
         </div>
     </ul>
 </nav>
