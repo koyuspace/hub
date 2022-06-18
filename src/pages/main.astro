@@ -51,7 +51,7 @@ let resolveAcc = (s = undefined) => {
 		<h1>Welcome <span id="name" />!</h1>
 		<p>These are your services</p>
 		<span id="services">
-			{users[`${Astro.request.url.split("?acc=")[1]}`]["services"].map((service) => (
+			{users[`${resolveAcc(Astro.request.url.split("?acc=")[1])}`]["services"].map((service) => (
 					<Service
 						url={resolveUrl(services[service], service)}
 						title={services[service]["title"]}
