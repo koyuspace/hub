@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import Service from '../components/service.astro';
 import data from '../data/data.json';
+import Logo from '../components/logo.astro';
 const users = data.users;
 const services = data.services;
 
@@ -50,4 +51,5 @@ let resolveAcc = (s = undefined) => {
 			))}
 		</span>
 	</main>
+	<Logo />
 </Layout>
