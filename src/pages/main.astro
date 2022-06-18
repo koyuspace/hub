@@ -1,7 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Service from '../components/service.astro';
-import Navigation from '../components/navigation.astro';
+import Navigation from '../components/navigation.vue';
 import data from '../data/data.json';
 const users = data.users;
 const services = data.services;
@@ -46,7 +46,7 @@ let resolveAcc = (s = undefined) => {
 	document.getElementById("name").innerHTML = username;
 </script>
 
-<Navigation avatar={localStorage.getItem("avatar")} />
+<Navigation />
 <Layout>
 	<main>
 		<h1>Welcome <span id="name" />!</h1>
