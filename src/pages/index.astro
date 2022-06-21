@@ -1,13 +1,18 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Navigation from "../components/navigation.astro";
+import People from "../components/people.astro";
 ---
 
+<script src="../ts/translations.ts"></script>
 <script src="../ts/app.ts"></script>
 <Navigation />
 <Layout>
     <main>
         <img src="/pb-icon.svg" alt="Logo" height="100">
-        <h3>Internet services for you and your friends</h3>
+        <h3 id="header">Internet services for you and your friends</h3>
+        <p id="learnmore"><a href="https://koyu.space/about/more" class="button">Learn more</a></p>
+        <h4 id="tagline">koyu.space is a global network of talented people delivering internet services to you. All we do is free and open-source software.</h4>
+        <People />
     </main>
 </Layout>
