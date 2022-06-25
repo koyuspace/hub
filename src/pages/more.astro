@@ -2,10 +2,15 @@
 import Layout from "../layouts/Layout.astro";
 import Navigation from "../components/navigation.astro";
 import Rules from "../components/rules.astro";
+
+let isloggedin = "false";
+if (localStorage.getItem("access_token") !== null) {
+    isloggedin = "true";
+}
 ---
 
 <Layout>
-    <Navigation />
+    <Navigation isloggedin={isloggedin} />
     <div id="main2">
         <Rules />
     </div>
