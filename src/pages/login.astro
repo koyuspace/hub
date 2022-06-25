@@ -64,6 +64,7 @@ newapp.onload = () => {
         if (localStorage.getItem("access_token") === null) {
             window.location.href = `https://koyu.space/oauth/authorize?client_id=${localStorage.getItem("client_id")}&scope=read&redirect_uri=${redirect_uri}&response_type=code`;
         } else {
+            document.cookie = "auth=true";
             window.location.href = `/main?acc=${localStorage.getItem("acc")}`;
         }
     }
