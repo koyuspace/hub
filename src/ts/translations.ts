@@ -3,7 +3,6 @@ import $ from 'jquery';
 if (navigator.language.split("-")[0] === "de") {
     $("#home").html("Startseite");
     $("#apps").html("Apps");
-    $("#services").html("Dienste");
     $("#donate").html("Spenden");
     $("#donatetext").html("Spenden");
     $("#login").html("Anmelden");
