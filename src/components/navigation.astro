@@ -10,9 +10,11 @@ const parseCookie = str =>
       return acc;
     }, {});
 
-if(parseCookie(document.cookie).auth) {
-    isloggedin = "true";
-}
+try {
+    if(parseCookie(document.cookie).auth) {
+        isloggedin = "true";
+    }
+} catch(e) {}
 
 let styles1 = "";
 let styles2 = "";
