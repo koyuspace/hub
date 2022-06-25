@@ -296,6 +296,7 @@ main {
     border-radius: 30px !important;
 }
 
-.SprdMain .sprd-detail-sizes__size {
+.SprdMain .sprd-detail-sizes__size,
+.SprdMain .sprd-detail-info__further-details-btn {
     color: #fff !important;
 }
