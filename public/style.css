@@ -7,11 +7,15 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: var(--element-color);
-    color: #fff;
+    background: var(--element-color) !important;
+    color: #fff !important;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+}
+
+a:hover {
+    color: #fff !important;
 }
 
 h1,
@@ -22,7 +26,7 @@ h3  {
 }
 
 nav {
-    max-height: 38px;
+    min-height: 38px;
 }
 
 nav ul {
@@ -58,10 +62,6 @@ main {
     float: right;
 }
 
-.right li:not(.except) {
-    margin-top: -5px !important;
-}
-
 .service {
     font-size: 72pt !important;
     display: inline;
@@ -80,10 +80,31 @@ main {
         margin: 0 auto;
     }
     #tagline {
-        width: 30%;
+        width: 50%;
         margin: 0 auto;
         margin-top: 40px;
     }
+    #dprogress {
+        width: 50%;
+        margin: 0 auto;
+    }
+    #main2 {
+        width: 70%;
+        margin: 0 auto;
+    }
+    #main2 h1,
+    #main2 h2,
+    #main2 h3 {
+        line-height: 2;
+    }
+    #sprd-startpage-teaser {
+        width: 95%;
+        margin: 0 auto;
+    }
+}
+
+#dprogress {
+    padding: 20px;
 }
 
 @media(max-width:800px) {
@@ -223,4 +244,51 @@ main {
 
 #learnmore {
     margin-top: 40px;
+}
+
+.disabled,
+.disabled:hover {
+    cursor: pointer;
+    background: var(--trends-transparency) !important;
+}
+
+.fa {
+    padding: 4px;
+}
+
+#main2 {
+    padding: 20px;
+}
+
+.sprd-header__image {
+    visibility: hidden;
+}
+
+#sprd-container,
+.sprd-bg-m3,
+.sprd-header,
+.sprd-bg-m1 {
+    background: #223 !important;
+    color: #fff !important;
+}
+
+.SprdMain .sprd-startpage-teaser__image {
+    background-image: url(https://content.koyu.space/img/bg.jpg) !important;
+}
+
+.SprdMain .sprd-img-spinner__image {
+    border-radius: 10px;
+}
+
+.sprd-search__icon,
+.sprd-basket-indicator__icon {
+    color: #fff;
+}
+
+#sprd-content {
+    text-align: left;
+}
+
+#sprd-content h4 {
+    font-size: var(--bs-body-font-size) !important;
 }

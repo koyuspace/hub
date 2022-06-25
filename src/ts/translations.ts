@@ -5,6 +5,7 @@ if (navigator.language.split("-")[0] === "de") {
     $("#apps").html("Apps");
     $("#services").html("Dienste");
     $("#donate").html("Spenden");
+    $("#donatetext").html("Spenden");
     $("#login").html("Anmelden");
     $("#register").html("Registrieren");
     $("#header").html("Internetdienste für dich und deine Freunde");
@@ -19,4 +20,7 @@ if (navigator.language.split("-")[0] === "de") {
     $("#donator").html("Spender*in");
     $("#infrastructure").html("Infrastruktur");
     $("#learnmore .button").html("Mehr erfahren");
+    $("#guidelines").html("Community-Richtlinien");
+    $("#annual").html("Aktuell jährliches Spendenziel:");
+    $("#dstart").html("Wo möchtest du helfen?");
 }

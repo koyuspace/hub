@@ -1,0 +1,25 @@
+---
+import Layout from '../layouts/Layout.astro'
+import Navigation from '../components/navigation.astro';
+import People from '../components/people.astro';
+---
+
+<Layout>
+    <Navigation />
+    <main>
+        <h1 id="donatetext">Donate</h1>
+        <div id="buttons">
+            <p id="dstart">Where do you want to help?</p>
+            <a href="https://liberapay.com/bubblineyuri" class="button" target="_blank">CDN</a>
+            <a class="button disabled">Server</a>
+            <a class="button disabled">Free software projects</a>
+        </div><br>
+        <div id="dprogress">
+            <p id="annual">Current annual goal:</p>
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 24%;background-color:var(--accent-color);">240€ / 1000€</div>
+            </div>
+        </div><br>
+        <People />
+    </main>
+</Layout>
