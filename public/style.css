@@ -292,7 +292,7 @@ main {
     font-size: var(--bs-body-font-size) !important;
 }
 
-.sprd-button {
+.SprdMain .sprd-button {
     border-radius: 30px !important;
 }
 
