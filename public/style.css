@@ -295,3 +295,7 @@ main {
 .sprd-button {
     border-radius: 30px !important;
 }
+
+.SprdMain .sprd-detail-sizes__size {
+    color: #fff !important;
+}
