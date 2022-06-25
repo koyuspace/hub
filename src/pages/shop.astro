@@ -1,15 +1,10 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Navigation from "../components/navigation.astro";
-
-let isloggedin = "false";
-if (localStorage.getItem("access_token") !== null) {
-    isloggedin = "true";
-}
 ---
 
 <Layout>
-    <Navigation isloggedin={isloggedin} />
+    <Navigation />
     <div id="myShop" style="padding:20px;">
         Loading...
     </div>

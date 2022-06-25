@@ -1,7 +1,12 @@
 ---
+let isloggedin = "false";
+if(parseCookie(document.cookie).auth) {
+    isloggedin = "true";
+}
+
 let styles1 = "";
 let styles2 = "";
-if (Astro.props.isloggedin !== "true") {
+if (Astro.props.isloggedin !== "true" || isloggedin !== "true") {
     styles1 = "display:none;";
 } else {
     styles2 = "display:none;";
