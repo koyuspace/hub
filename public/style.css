@@ -108,9 +108,6 @@ main {
 }
 
 @media(max-width:800px) {
-    nav {
-        width: calc(100vw + 38px);
-    }
     #logo {
         display: none;
     }
@@ -118,6 +115,8 @@ main {
 
 #avatar {
     vertical-align: middle;
+    border-radius: 50%;
+    margin-top: -2px;
 }
 
 main {
