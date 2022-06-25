@@ -1,23 +1,13 @@
 ---
-let isloggedin = "false";
-
-if (document.cookie.includes("auth=true")) {
-    isloggedin = "true";
-}
-
 let styles1 = "";
 let styles2 = "";
+
 if (Astro.props.isloggedin !== "true") {
     styles1 = "display:none;";
 } else {
     styles2 = "display:none;";
 }
 
-if (isloggedin !== "true") {
-    styles1 = "display:none;";
-} else {
-    styles2 = "display:none;";
-}
 ---
 <script src="../ts/navigation.ts"></script>
 <nav>
@@ -26,13 +16,24 @@ if (isloggedin !== "true") {
         <li><a href="/donate" id="donate">Donate</a></li>
         <li><a href="/more" id="guidelines">Community guidelines</a></li>
         <li><a href="/shop">Shop</a></li>
-        <div class="right" style={styles1}>
+        <div class="right" id="styles1" style={styles1}>
             <li class="except"><a href="https://koyu.space/settings/profile" target="_blank"><img id="avatar" height="38"></a></li>
             <li><a href="#" id="logout"><i class="fa fa-sign-out" aria-hidden="true" /></a></li>
         </div>
-        <div class="right" style={styles2}>
+        <div class="right" id="styles2" style={styles2}>
             <li><a href="/login" id="login">Login</a></li>
             <li><a href="https://koyu.space/auth/sign_up" id="register">Sign Up</a></li>
         </div>
     </ul>
 </nav>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script is:inline type="text/javascript">
+$(document).ready(function() {
+    if (document.cookie.includes("auth=true")) {
+        $("#styles2").hide();
+    } else {
+        $("#styles1").hide();
+    }
+});
+</script>
