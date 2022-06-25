@@ -11,14 +11,20 @@ const parseCookie = str =>
     }, {});
 
 try {
-    if(parseCookie(document.cookie).auth) {
+    if(parseCookie(document.cookie).auth === "true") {
         isloggedin = "true";
     }
 } catch(e) {}
 
 let styles1 = "";
 let styles2 = "";
-if (Astro.props.isloggedin !== "true" || isloggedin !== "true") {
+if (Astro.props.isloggedin !== "true") {
+    styles1 = "display:none;";
+} else {
+    styles2 = "display:none;";
+}
+
+if (isloggedin !== "true") {
     styles1 = "display:none;";
 } else {
     styles2 = "display:none;";
