@@ -1,20 +1,9 @@
 ---
 let isloggedin = "false";
 
-const parseCookie = str =>
-  str
-    .split(';')
-    .map(v => v.split('='))
-    .reduce((acc, v) => {
-      acc[decodeURIComponent(v[0].trim())] = decodeURIComponent(v[1].trim());
-      return acc;
-    }, {});
-
-try {
-    if(parseCookie(document.cookie).auth === "true") {
-        isloggedin = "true";
-    }
-} catch(e) {}
+if (document.cookie.includes("auth=true")) {
+    isloggedin = "true";
+}
 
 let styles1 = "";
 let styles2 = "";
