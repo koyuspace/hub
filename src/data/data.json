@@ -111,6 +111,17 @@
             ],
             "gemini": "bartf1969"
         },
+        "Gigglyingalloy": {
+            "services": [
+                "mastodon",
+                "telegram",
+                "chat",
+                "xmpp",
+                "nordcast",
+                "web"
+            ],
+            "web": "artistxoder"
+        },
         "default": {
             "services": [
                 "mastodon",
