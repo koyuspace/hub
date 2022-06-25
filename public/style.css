@@ -292,3 +292,7 @@ main {
 #sprd-content h4 {
     font-size: var(--bs-body-font-size) !important;
 }
+
+.sprd-button {
+    border-radius: 30px !important;
+}
