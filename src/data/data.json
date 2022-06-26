@@ -10,7 +10,8 @@
                 "mail",
                 "stream",
                 "xmpp",
-                "nordcast"
+                "nordcast",
+                "gaming"
             ],
             "web": "web",
             "gemini": "koyu"
@@ -22,7 +23,8 @@
                 "chat",
                 "mail",
                 "xmpp",
-                "nordcast"
+                "nordcast",
+                "gaming"
             ]
         },
         "TastyTentacles": {
@@ -32,7 +34,8 @@
                 "telegram",
                 "chat",
                 "xmpp",
-                "nordcast"
+                "nordcast",
+                "gaming"
             ],
             "web": "tastytentacles"
         },
@@ -43,7 +46,9 @@
                 "telegram",
                 "chat",
                 "xmpp",
-                "nordcast"
+                "nordcast",
+                "gaming",
+                "stream"
             ],
             "gemini": "pukima"
         },
@@ -54,7 +59,8 @@
                 "chat",
                 "xmpp",
                 "nordcast",
-                "stream"
+                "stream",
+                "gaming"
             ]
         },
         "Fyrfaras": {
@@ -64,7 +70,8 @@
                 "chat",
                 "xmpp",
                 "nordcast",
-                "stream"
+                "stream",
+                "gaming"
             ]
         },
         "cronomaestro": {
@@ -74,7 +81,8 @@
                 "chat",
                 "xmpp",
                 "nordcast",
-                "gemini"
+                "gemini",
+                "gaming"
             ],
             "gemini": "cronomaestro"
         },
@@ -85,7 +93,8 @@
                 "chat",
                 "xmpp",
                 "nordcast",
-                "gemini"
+                "gemini",
+                "gaming"
             ],
             "gemini": "blu256"
         },
@@ -96,7 +105,8 @@
                 "chat",
                 "xmpp",
                 "nordcast",
-                "gemini"
+                "gemini",
+                "gaming"
             ],
             "gemini": "SEEK"
         },
@@ -107,7 +117,8 @@
                 "chat",
                 "xmpp",
                 "nordcast",
-                "gemini"
+                "gemini",
+                "gaming"
             ],
             "gemini": "bartf1969"
         },
@@ -118,7 +129,8 @@
                 "chat",
                 "xmpp",
                 "nordcast",
-                "web"
+                "web",
+                "gaming"
             ],
             "web": "artistxoder"
         },
@@ -128,7 +140,8 @@
                 "telegram",
                 "chat",
                 "xmpp",
-                "nordcast"
+                "nordcast",
+                "gaming"
             ]
         }
     },
@@ -166,6 +179,11 @@
         },
         "nordcast": {
             "title": "Nordcast"
+        },
+        "gaming": {
+            "url": "https://zecircle.xyz",
+            "title": "ZeCircle",
+            "icon": "gamepad"
         }
     }
 }
