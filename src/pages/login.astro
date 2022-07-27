@@ -3,6 +3,8 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <script>
+import data from '../data/creds.json';
+
 // Change this
 const redirect_uri = "https://hub.koyu.space/login";
 
@@ -19,54 +21,48 @@ function findGetParameter(parameterName) {
     return result;
 }
 
-let newapp = new XMLHttpRequest();
-newapp.open("POST", "https://koyu.space/api/v1/apps", true);
-newapp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
-newapp.send(`client_name=koyu.space%20Hub&redirect_uris=${redirect_uri}&scopes=read&website=https://hub.koyu.space`);
-newapp.onload = () => {
-    let data = JSON.parse(newapp.responseText);
-    if (localStorage.getItem("client_id") === null || localStorage.getItem("client_secret") === null) {
-        localStorage.setItem("client_id", data.client_id);
-        localStorage.setItem("client_secret", data.client_secret);
-    }
-    
-    if (findGetParameter("code")) {
-            let token = new XMLHttpRequest();
-            token.open("POST", "https://koyu.space/oauth/token", true);
-            token.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
-            token.send(`client_id=${localStorage.getItem('client_id')}&client_secret=${localStorage.getItem('client_secret')}&redirect_uri=${redirect_uri}&grant_type=authorization_code&code=${findGetParameter("code")}&scope=read`);
-            token.onload = () => {
-                localStorage.setItem("access_token", JSON.parse(token.responseText).access_token);
-                document.cookie = "auth=true";
-                let token2 = new XMLHttpRequest();
-                let avatar = "https://koyu.space/avatars/original/missing.png";
-                token2.open("GET", "https://koyu.space/api/v1/accounts/verify_credentials");
-                token2.setRequestHeader("Authorization", `Bearer ${localStorage.getItem('access_token')}`);
-                token2.send();
-                token2.onload = () => {
-                    let adata = JSON.parse(token2.responseText);
-                    if (adata.username) {
-                        localStorage.setItem("acc", adata.username);
-                    }
-                    if (adata.display_name) {
-                        localStorage.setItem("username", adata.display_name);
-                    }
-                    if (adata.avatar) {
-                        localStorage.setItem("avatar", adata.avatar);
-                    }
-                    if (adata.emojis) {
-                        localStorage.setItem("emojis", JSON.stringify(adata.emojis));
-                    }
-                    window.location.href = `/main?acc=${localStorage.getItem("acc")}`;
-                };
-            };
-    } else {
-        if (localStorage.getItem("access_token") === null) {
-            window.location.href = `https://koyu.space/oauth/authorize?client_id=${localStorage.getItem("client_id")}&scope=read&redirect_uri=${redirect_uri}&response_type=code`;
-        } else {
+let data = JSON.parse(newapp.responseText);
+if (localStorage.getItem("client_id") === null || localStorage.getItem("client_secret") === null) {
+    localStorage.setItem("client_id", data.client_id);
+    localStorage.setItem("client_secret", data.client_secret);
+}
+
+if (findGetParameter("code")) {
+        let token = new XMLHttpRequest();
+        token.open("POST", "https://koyu.space/oauth/token", true);
+        token.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+        token.send(`client_id=${localStorage.getItem('client_id')}&client_secret=${localStorage.getItem('client_secret')}&redirect_uri=${redirect_uri}&grant_type=authorization_code&code=${findGetParameter("code")}&scope=read`);
+        token.onload = () => {
+            localStorage.setItem("access_token", JSON.parse(token.responseText).access_token);
             document.cookie = "auth=true";
-            window.location.href = `/main?acc=${localStorage.getItem("acc")}`;
-        }
+            let token2 = new XMLHttpRequest();
+            let avatar = "https://koyu.space/avatars/original/missing.png";
+            token2.open("GET", "https://koyu.space/api/v1/accounts/verify_credentials");
+            token2.setRequestHeader("Authorization", `Bearer ${localStorage.getItem('access_token')}`);
+            token2.send();
+            token2.onload = () => {
+                let adata = JSON.parse(token2.responseText);
+                if (adata.username) {
+                    localStorage.setItem("acc", adata.username);
+                }
+                if (adata.display_name) {
+                    localStorage.setItem("username", adata.display_name);
+                }
+                if (adata.avatar) {
+                    localStorage.setItem("avatar", adata.avatar);
+                }
+                if (adata.emojis) {
+                    localStorage.setItem("emojis", JSON.stringify(adata.emojis));
+                }
+                window.location.href = `/main?acc=${localStorage.getItem("acc")}`;
+            };
+        };
+} else {
+    if (localStorage.getItem("access_token") === null) {
+        window.location.href = `https://koyu.space/oauth/authorize?client_id=${localStorage.getItem("client_id")}&scope=read&redirect_uri=${redirect_uri}&response_type=code`;
+    } else {
+        document.cookie = "auth=true";
+        window.location.href = `/main?acc=${localStorage.getItem("acc")}`;
     }
 }
 </script>
