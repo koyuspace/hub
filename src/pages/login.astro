@@ -21,7 +21,6 @@ function findGetParameter(parameterName) {
     return result;
 }
 
-let data = JSON.parse(newapp.responseText);
 if (localStorage.getItem("client_id") === null || localStorage.getItem("client_secret") === null) {
     localStorage.setItem("client_id", data.client_id);
     localStorage.setItem("client_secret", data.client_secret);
