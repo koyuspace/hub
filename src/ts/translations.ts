@@ -7,6 +7,10 @@ if (navigator.language.split("-")[0] === "de") {
     $("#donatetext").html("Spenden");
     $("#login").html("Anmelden");
     $("#register").html("Registrieren");
+    $("#myaccount").html("Mein Konto");
+    $("#ourservices").html("Unsere Dienste:");
+    $("#services").html("Dienste");
+    $("#servicestitle").html("Dienste");
     $("#header").html("Internetdienste für dich und deine Freunde");
     $("#tagline").html("koyu.space ist ein globales Netzwerk von talentierten Menschen, die dir Internetdienste anbieten. Alles, was wir tun, ist kostenlos und Open-Source-Software.");
     $("#privacy").html("Datenschutz");

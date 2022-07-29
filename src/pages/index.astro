@@ -1,15 +1,58 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Navigation from "../components/navigation.astro";
+import Service from '../components/service.astro';
+import data from '../data/data.json';
+const users = data.users;
+const services = data.services;
+
+let resolveUrl = (u = {url: undefined}, s = "") => {
+	if (u.url === undefined) {
+		if (s === "gemini") {
+			return `gemini://koyu.space/${users[Astro.request.url.split("?acc=")[1]].gemini}/`;
+		} else {
+			return `https://${s}.koyu.space`;
+		}
+	} else {
+		return u.url;
+	}
+}
+
+let resolveIcon = (s = undefined) => {
+	if (services[s].icon === undefined) {
+		return s;
+	} else {
+		return services[s].icon;
+	}
+}
+
+let resolveAcc = (s = undefined) => {
+	if (users[s] === undefined) {
+		return "default";
+	} else {
+		return s;
+	}
+}
 ---
 
-<script src="../ts/app.ts"></script>
 <Navigation />
 <Layout>
     <main>
         <img src="/pb-icon.svg" alt="Logo" height="100">
         <h3 id="header">Internet services for you and your friends</h3>
-        <p id="learnmore"><a href="https://koyu.space/about/more" class="button">Learn more</a></p>
+        <p id="learnmore"><a href="/more" class="button">Learn more</a></p>
         <h4 id="tagline">koyu.space is a global network of talented people delivering internet services to you. All we do is free and open-source software.</h4>
+        <br><br><br>
+        <h2 id="ourservices">Our services:</h2>
+        <span>
+			{users[`${resolveAcc(Astro.request.url.split("?acc=")[1])}`]["services"].map((service) => (
+					<Service
+						url={resolveUrl(services[service], service)}
+						title={services[service]["title"]}
+						icon={resolveIcon(service)}
+					/>
+			))}
+		</span>
+        <br><br><br>
     </main>
 </Layout>

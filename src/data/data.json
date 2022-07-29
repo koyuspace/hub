@@ -125,8 +125,10 @@
         },
         "default": {
             "services": [
-                "mastodon",
+                "fedi",
                 "chat",
+                "mail",
+                "stream",
                 "xmpp",
                 "nordcast",
                 "gaming"
@@ -134,9 +136,10 @@
         }
     },
     "services": {
-        "mastodon": {
-            "url": "https://koyu.space",
-            "title": "Mastodon"
+        "fedi": {
+            "url": "https://fedi.koyu.space",
+            "title": "fedi",
+            "icon": "pleroma"
         },
         "gemini": {
             "title": "Gemini",
@@ -147,8 +150,9 @@
             "icon": "globe"
         },
         "chat": {
+            "url": "https://matrix.to/#/#koyu.space:mozilla.org",
             "title": "Chat",
-            "icon": "comments"
+            "icon": "matrix-org"
         },
         "mail": {
             "title": "Mail",
