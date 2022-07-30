@@ -1,0 +1,99 @@
+/* karla-extralight */
+@font-face {
+	font-family: Karla;
+	font-style: normal;
+	font-weight: 400;
+	src: local("Karla ExtraLight"), local("Karla-ExtraLight"), url(karla-extralight.woff2) format("woff2");
+}
+/* karla-extralight-italic */
+@font-face {
+	font-family: Karla;
+	font-style: italic;
+	font-weight: 400;
+	src: local("Karla ExtraLight Italic"), local("Karla-ExtraLightItalic"), url(karla-extralight-italic.woff2) format("woff2");
+}
+/* karla-light */
+@font-face {
+	font-family: Karla;
+	font-style: normal;
+	font-weight: 300;
+	src: local("Karla Light"), local("Karla-Light"), url(karla-light.woff2) format("woff2");
+}
+/* karla-light-italic */
+@font-face {
+	font-family: Karla;
+	font-style: italic;
+	font-weight: 300;
+	src: local("Karla Light Italic"), local("Karla-LightItalic"), url(karla-light-italic.woff2) format("woff2");
+}
+/* karla-medium */
+@font-face {
+	font-family: Karla;
+	font-style: normal;
+	font-weight: 500;
+	src: local("Karla Medium"), local("Karla-Medium"), url(karla-medium.woff2) format("woff2");
+}
+/* karla-medium-italic */
+@font-face {
+	font-family: Karla;
+	font-style: italic;
+	font-weight: 500;
+	src: local("Karla Medium Italic"), local("Karla-MediumItalic"), url(karla-medium-italic.woff2) format("woff2");
+}
+/* karla-semibold */
+@font-face {
+	font-family: Karla;
+	font-style: normal;
+	font-weight: 400;
+	src: local("Karla SemiBold"), local("Karla-SemiBold"), url(karla-semibold.woff2) format("woff2");
+}
+/* karla-semibold-italic */
+@font-face {
+	font-family: Karla;
+	font-style: italic;
+	font-weight: 400;
+	src: local("Karla SemiBold Italic"), local("Karla-SemiBoldItalic"), url(karla-semibold-italic.woff2) format("woff2");
+}
+/* karla-bold */
+@font-face {
+	font-family: Karla;
+	font-style: normal;
+	font-weight: 700;
+	src: local("Karla Bold"), local("Karla-Bold"), url(karla-bold.woff2) format("woff2");
+}
+/* karla-bold-italic */
+@font-face {
+	font-family: Karla;
+	font-style: italic;
+	font-weight: 700;
+	src: local("Karla Bold Italic"), local("Karla-BoldItalic"), url(karla-bold-italic.woff2) format("woff2");
+}
+/* karla-extrabold */
+@font-face {
+	font-family: Karla;
+	font-style: normal;
+	font-weight: 400;
+	src: local("Karla ExtraBold"), local("Karla-ExtraBold"), url(karla-extrabold.woff2) format("woff2");
+}
+/* karla-extrabold-italic */
+@font-face {
+	font-family: Karla;
+	font-style: italic;
+	font-weight: 400;
+	src: local("Karla ExtraBold Italic"), local("Karla-ExtraBoldItalic"), url(karla-extrabold-italic.woff2) format("woff2");
+}
+/* karla-italic */
+@font-face {
+	font-family: Karla;
+	font-style: italic;
+	font-weight: 400;
+	src: local("Karla Italic"), local("Karla-Italic"), url(karla-italic.woff2) format("woff2");
+}
+/* karla-regular */
+@font-face {
+	font-family: Karla;
+	font-style: normal;
+	font-weight: 400;
+	src: local("Karla Regular"), local("Karla-Regular"), url(karla-regular.woff2) format("woff2");
+}
+
