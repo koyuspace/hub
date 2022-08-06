@@ -1,132 +1,8 @@
 {
     "users": {
-        "koyuchan": {
-            "services": [
-                "mastodon",
-                "gemini",
-                "web",
-                "chat",
-                "mail",
-                "stream",
-                "xmpp",
-                "nordcast",
-                "gaming"
-            ],
-            "web": "web",
-            "gemini": "koyu"
-        },
-        "Shorl": {
-            "services": [
-                "mastodon",
-                "chat",
-                "mail",
-                "xmpp",
-                "nordcast",
-                "gaming"
-            ]
-        },
-        "TastyTentacles": {
-            "services": [
-                "mastodon",
-                "web",
-                "chat",
-                "xmpp",
-                "nordcast",
-                "gaming"
-            ],
-            "web": "tastytentacles"
-        },
-        "Pukima": {
-            "services": [
-                "mastodon",
-                "gemini",
-                "chat",
-                "xmpp",
-                "nordcast",
-                "gaming",
-                "stream"
-            ],
-            "gemini": "pukima"
-        },
-        "Einhjeriar": {
-            "services": [
-                "mastodon",
-                "chat",
-                "xmpp",
-                "nordcast",
-                "stream",
-                "gaming"
-            ]
-        },
-        "Fyrfaras": {
-            "services": [
-                "mastodon",
-                "chat",
-                "xmpp",
-                "nordcast",
-                "stream",
-                "gaming"
-            ]
-        },
-        "cronomaestro": {
-            "services": [
-                "mastodon",
-                "chat",
-                "xmpp",
-                "nordcast",
-                "gemini",
-                "gaming"
-            ],
-            "gemini": "cronomaestro"
-        },
-        "blu256": {
-            "services": [
-                "mastodon",
-                "chat",
-                "xmpp",
-                "nordcast",
-                "gemini",
-                "gaming"
-            ],
-            "gemini": "blu256"
-        },
-        "seek": {
-            "services": [
-                "mastodon",
-                "chat",
-                "xmpp",
-                "nordcast",
-                "gemini",
-                "gaming"
-            ],
-            "gemini": "SEEK"
-        },
-        "bartf1969": {
-            "services": [
-                "mastodon",
-                "chat",
-                "xmpp",
-                "nordcast",
-                "gemini",
-                "gaming"
-            ],
-            "gemini": "bartf1969"
-        },
-        "Gigglyingalloy": {
-            "services": [
-                "mastodon",
-                "chat",
-                "xmpp",
-                "nordcast",
-                "web",
-                "gaming"
-            ],
-            "web": "artistxoder"
-        },
         "default": {
             "services": [
                 "fedi",
-                "chat",
                 "mail",
                 "stream",
                 "xmpp",
@@ -148,11 +24,6 @@
         "web": {
             "title": "Web",
             "icon": "globe"
-        },
-        "chat": {
-            "url": "https://matrix.to/#/#koyu.space:mozilla.org",
-            "title": "Chat",
-            "icon": "matrix-org"
         },
         "mail": {
             "title": "Mail",

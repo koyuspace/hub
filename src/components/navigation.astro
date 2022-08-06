@@ -5,23 +5,7 @@
         <li><a href="/more" id="guidelines">Community guidelines</a></li>
         <li><a href="/shop">Shop</a></li>
         <li><a href="https://up.koyu.space" target="_blank">Uptime</a></li>
-        <div class="right" id="styles1">
-            <li class="except"><a href="https://koyu.space/settings/profile" target="_blank"><img id="avatar" height="38"></a></li>
-            <li><a href="#" id="logout"><i class="fa fa-sign-out" aria-hidden="true" /></a></li>
-        </div>
-        <div class="right" id="styles2">
-            <li><a href="/account" id="myaccount">My account</a></li>
+        <div class="right">
         </div>
     </ul>
 </nav>
-
-<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-<script is:inline type="text/javascript">
-$(document).ready(function() {
-    if (document.cookie.includes("auth=true")) {
-        $("#styles2").hide();
-    } else {
-        $("#styles1").hide();
-    }
-});
-</script>

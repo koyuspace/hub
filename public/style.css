@@ -142,12 +142,6 @@ main {
     color: rgba(255,255,255,0.8);
 }
 
-#people {
-    margin: 0 auto;
-    border-radius: 10px;
-    padding-bottom: 25px;
-}
-
 #avatars {
     display: inline;
 }
