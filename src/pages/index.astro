@@ -40,20 +40,20 @@ let resolveAcc = (s = undefined) => {
     <main>
         <img src="/pb-icon.svg" alt="Logo" height="100">
         <h3 id="header">Internet services for you and your friends</h3><br>
-        <p id="learnmore"><a href="/more" class="button">Learn more</a></p>
-        <br>
         <h4 id="tagline">koyu.space is a global network of talented people delivering internet services to you. All we do is free and open-source software.</h4>
-        <br><br><br>
-        <h2 id="ourservices">Our services:</h2>
-        <span>
+        <br><br><br><br>
+        <section>
+		<h2 id="ourservices">Our services:</h2>
+		<span>
 			{users[`${resolveAcc(Astro.request.url.split("?acc=")[1])}`]["services"].map((service) => (
-					<Service
-						url={resolveUrl(services[service], service)}
-						title={services[service]["title"]}
-						icon={resolveIcon(service)}
-					/>
-			))}
+						<Service
+							url={resolveUrl(services[service], service)}
+							title={services[service]["title"]}
+							icon={resolveIcon(service)}
+						/>
+				))}
 		</span>
+	</section>
         <br><br><br>
     </main>
 </Layout>

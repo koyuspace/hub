@@ -1,9 +1,10 @@
 ---
+import { Icon } from "astro-icon";
 const { url, title, icon } = Astro.props;
 ---
 
 <div class="service">
     <a href={url} target="_blank" title={title}>
-        <i class={`fa fa-${icon}`} alt={title}></i>
+        <Icon name={icon} alt={title}></i>
     </a>
 </div>

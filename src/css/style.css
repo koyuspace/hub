@@ -9,7 +9,7 @@
 
 body {
     font-family: Karla, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
-    background: var(--element-color) !important;
+    background: #223;
     color: #fff !important;
     margin: 0;
     padding: 0;
@@ -24,36 +24,10 @@ h1,
 h2,
 h3  {
     font-weight: 300;
-    line-height: 0.5;
 }
 
-nav {
-    min-height: 38px;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    background: var(--accent-color);
-    color: var(--element-color);
-}
-  
-nav li:not(.except) {
-    padding: 10px;
-}
-
-nav li {
-    display: inline-block;
-}
-
-nav li:hover:not(.except) {
-    background: var(--accent-color-hover);
-}
-
-nav a {
-    color: #fff;
-    text-decoration: none;
+#header {
+    margin-top: 20px;
 }
 
 main {
@@ -113,6 +87,12 @@ main {
     #logo {
         display: none;
     }
+    body {
+        background: #223 !important;
+   }
+   img[alt="Logo"] {
+       margin-left: -37px;
+   }
 }
 
 #avatar {
@@ -299,4 +279,8 @@ main {
 
 #tagline, #ourservices {
   font-weight: 400;
+}
+
+.service > a > svg {
+  height: 36pt;
 }

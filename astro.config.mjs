@@ -4,5 +4,6 @@ import vue from '@astrojs/vue';
 
 export default defineConfig({
 	integrations: [vue()],
-	adapter: vercel()
+	adapter: vercel(),
+        output: "server"
 });

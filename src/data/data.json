@@ -5,8 +5,8 @@
                 "fedi",
                 "mail",
                 "stream",
+                "chat",
                 "xmpp",
-                "nordcast",
                 "gaming"
             ]
         }
@@ -15,34 +15,37 @@
         "fedi": {
             "url": "https://fedi.koyu.space",
             "title": "fedi",
-            "icon": "pleroma"
+            "icon": "simple-icons:pleroma"
         },
         "gemini": {
             "title": "Gemini",
-            "icon": "gem"
+            "icon": "fa:gem"
         },
         "web": {
             "title": "Web",
-            "icon": "globe"
+            "icon": "fa:globe"
         },
         "mail": {
             "title": "Mail",
-            "icon": "envelope"
+            "icon": "fa:envelope"
         },
         "stream": {
             "title": "koyu.space Stream",
-            "icon": "video-camera"
+            "icon": "fa:video-camera"
         },
         "xmpp": {
-            "title": "XMPP"
-        },
-        "nordcast": {
-            "title": "Nordcast"
+            "title": "XMPP",
+            "icon": "simple-icons:xmpp"
         },
         "gaming": {
             "url": "https://zecircle.xyz",
             "title": "ZeCircle",
-            "icon": "gamepad"
-        }
+            "icon": "fa:gamepad"
+        },
+        "chat": {
+            "url": "https://matrix.to/#/#koyu.space:mozilla.org",
+            "title": "Matrix",
+            "icon": "fa:comments"
+	}
     }
 }
