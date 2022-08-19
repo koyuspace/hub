@@ -284,3 +284,7 @@ main {
 .service > a > svg {
   height: 36pt;
 }
+
+.sprd-customer-reviews__sort-btn {
+  color: #fff;
+}
