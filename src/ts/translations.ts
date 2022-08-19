@@ -25,5 +25,5 @@ if (navigator.language.split("-")[0] === "de") {
     $("#learnmore .button").html("Mehr erfahren");
     $("#guidelines").html("Community-Richtlinien");
     $("#annual").html("Aktuell jährliches Spendenziel:");
-    $("#dstart").html("Wo möchtest du helfen?");
+    $("#dstart").html("Wie möchtest du bezahlen?");
 }
