@@ -1,0 +1,78 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Logo from '../../components/logo.astro';
+import Navigation from '../../components/navigation.astro';
+import Service from '../../components/service.astro';
+import data from '../../data/data.json';
+const users = data.users;
+const services = data.services;
+
+let resolveUrl = (u = {url: undefined}, s = "") => {
+        if (u.url === undefined) {
+                if (s === "gemini") {
+                        return `gemini://koyu.space/${users[Astro.request.url.split("?acc=")[1]].gemini}/`;
+                } else {
+                        return `https://${s}.koyu.space`;
+                }
+        } else {
+                return u.url;
+        }
+}
+
+let resolveIcon = (s = undefined) => {
+        if (services[s].icon === undefined) {
+                return s;
+        } else {
+                return services[s].icon;
+        }
+}
+
+let resolveAcc = (s = undefined) => {
+        if (users[s] === undefined) {
+                return "default";
+        } else {
+                return s;
+        }
+}
+
+---
+
+<Layout>
+	<Navigation />
+	<div id="main2">
+	<a href="/wiki">&larr; Back to Wiki</a><br>
+	<h1>Services</h1>
+	<p>We currently got the following services:</p>
+	<span>
+		{users[`${resolveAcc(Astro.request.url.split("?acc=")[1])}`]["services"].map((service) => (
+			<Service
+				url={resolveUrl(services[service], service)}
+				title={services[service]["title"]}
+				icon={resolveIcon(service)}
+			/>
+		))}
+	</span>
+	<p>Services with closed registrations are request-only due to limited resources. The mail service is reserved for koyu and shorl only.</p>
+	<p>We also offer free subdomains for users on koyu.space! Just e-mail us your A record or CNAME record along with your preffered subdomain and we will handle the rest. Please note that we don’t take any responsibility for user subdomains except limited by law.</p>
+	<h2>Webhosting</h2>
+	<p>Webhosting (static content only) is available for koyu.space members which means:</p>
+	<ul>
+	<li>You use our services for more than 90 days</li>
+	<li>You either donated more than once or gained moderator/admin privileges</li>
+	<li>You are in the Matrix chat</li>
+	</ul>
+	<p>What you get:</p>
+	<ul>
+	<li>FTP access to your own webspace</li>
+	<li>Your own subdomain</li>
+	<li>A colored name on koyu.space</li>
+	</ul>
+	<p>Rules:</p>
+	<ul>
+	<li>Fair use</li>
+	<li>No illegal content</li>
+	</ul>
+	<p>How to get:</p>
+	<p>E-Mail <a href="mailto:support@koyu.space">support@koyu.space</a> and we’ll sort out your request.</p>
+	</div>
+</Layout>

@@ -1,0 +1,28 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Logo from '../../components/logo.astro';
+import Navigation from '../../components/navigation.astro';
+---
+
+<Layout>
+	<Navigation />
+	<div id="main2">
+	<a href="/wiki">&larr; Back to Wiki</a><br>
+	<h1>Livestreaming on koyu.space</h1>
+	<p>koyu.space got a livestreaming server available at <a href="https://stream.koyu.space" target="_blank">stream.koyu.space</a>. Staff members can stream their favourite content to as long as they edit the schedule accordingly.</p>
+	<h2>Getting started</h2>
+	<p>If you’re an admin or moderator for more than 90 days you can kindly ask koyu to give you the credentials to the streaming server.</p>
+	<h3>Access</h3>
+	<h4>Admin dashboard</h4>
+	<p>The admin dashboard can be accessed <a href="https://stream.koyu.space/admin/" target="_blank">here</a>.</p>
+	<h4>Streaming keys</h4>
+	<h5>Credentials</h5>
+	<p>The credentials are the following:</p>
+	<pre>
+	Stream URL: rtmp://stream.koyu.space:1935/live/
+	Streaming key: The key you got from koyu
+	</pre>
+	<h5>Configuring OBS Studio</h5>
+	<p>You can use the auto-configuration wizard from OBS Studio to properly configure koyu.space Stream for streaming. If you notice frame drops or connection errors please properly configure the bitrate.</p>
+	</div>
+</Layout>
