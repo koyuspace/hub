@@ -211,7 +211,6 @@ main {
     color: #fff;
     text-decoration: none;
     padding: 10px;
-    width: 150px;
 }
 .button:hover {
     background-color: var(--accent-color-hover)!important;
@@ -287,4 +286,8 @@ main {
 
 .sprd-customer-reviews__sort-btn {
   color: #fff;
+}
+
+form {
+  display: inline;
 }
