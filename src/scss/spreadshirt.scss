@@ -1,0 +1,54 @@
+@import "variables";
+
+.sprd-header__image {
+    visibility: hidden;
+}
+
+#sprd-container,
+.sprd-bg-m3,
+.sprd-header,
+.sprd-bg-m1 {
+    background: $element-color !important;
+    color: $foreground !important;
+}
+
+.SprdMain .sprd-startpage-teaser__image {
+    background-image: url(https://content.koyu.space/img/bg.jpg) !important;
+}
+
+.SprdMain .sprd-img-spinner__image {
+    border-radius: 10px;
+}
+
+.sprd-search__icon,
+.sprd-basket-indicator__icon {
+    color: $foreground;
+}
+
+#sprd-content {
+    text-align: left;
+}
+
+#sprd-content h4 {
+    font-size: var(--bs-body-font-size) !important;
+}
+
+.SprdMain .sprd-button {
+    border-radius: 30px !important;
+}
+
+.SprdMain .sprd-detail-sizes__size,
+.SprdMain .sprd-detail-info__further-details-btn {
+    color: $foreground !important;
+}
+
+.sprd-customer-reviews__sort-btn {
+  color: $foreground;
+}
+
+@media(min-width:800px) {
+    #sprd-startpage-teaser {
+        width: 95%;
+        margin: 0 auto;
+    }
+}

@@ -1,57 +1,14 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import Logo from '../../components/logo.astro';
-import Navigation from '../../components/navigation.astro';
-import Service from '../../components/service.astro';
-import data from '../../data/data.json';
-const users = data.users;
-const services = data.services;
-
-let resolveUrl = (u = {url: undefined}, s = "") => {
-        if (u.url === undefined) {
-                if (s === "gemini") {
-                        return `gemini://koyu.space/${users[Astro.request.url.split("?acc=")[1]].gemini}/`;
-                } else {
-                        return `https://${s}.koyu.space`;
-                }
-        } else {
-                return u.url;
-        }
-}
-
-let resolveIcon = (s = undefined) => {
-        if (services[s].icon === undefined) {
-                return s;
-        } else {
-                return services[s].icon;
-        }
-}
-
-let resolveAcc = (s = undefined) => {
-        if (users[s] === undefined) {
-                return "default";
-        } else {
-                return s;
-        }
-}
-
+import Services from '../../components/services.astro';
 ---
 
 <Layout>
-	<Navigation />
 	<div id="main2">
 	<a href="/wiki">&larr; Back to Wiki</a><br>
 	<h1>Services</h1>
 	<p>We currently got the following services:</p>
-	<span>
-		{users[`${resolveAcc(Astro.request.url.split("?acc=")[1])}`]["services"].map((service) => (
-			<Service
-				url={resolveUrl(services[service], service)}
-				title={services[service]["title"]}
-				icon={resolveIcon(service)}
-			/>
-		))}
-	</span>
+	<Services />
 	<p>Services with closed registrations are request-only due to limited resources. The mail service is reserved for koyu and shorl only.</p>
 	<p>We also offer free subdomains for users on koyu.space! Just e-mail us your A record or CNAME record along with your preffered subdomain and we will handle the rest. Please note that we don’t take any responsibility for user subdomains except limited by law.</p>
 	<h2>Webhosting</h2>

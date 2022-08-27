@@ -1,0 +1,86 @@
+@import "variables";
+
+body {
+    font-family: Karla, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+    background: $element-color;
+    color: $foreground !important;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+a:hover {
+    color: $foreground !important;
+}
+
+h1,
+h2,
+h3  {
+    font-weight: 300;
+}
+
+#header {
+    margin-top: 20px;
+}
+
+main {
+    text-align: center;
+}
+
+.right {
+    float: right;
+}
+
+#tagline {
+    font-weight: 400;
+}
+
+.fa {
+    padding: 4px;
+}
+
+#main2 {
+    padding: 20px;
+}
+
+form {
+  display: inline;
+}
+
+main {
+    margin-top: 20px;
+}
+
+.inside {
+    margin-top: 40px;
+}
+
+#learnmore {
+    margin-top: 40px;
+}
+
+@media(min-width:800px) {
+    #tagline {
+        width: 50%;
+        margin: 0 auto;
+        margin-top: 40px;
+    }
+    #main2 {
+        width: 70%;
+        margin: 0 auto;
+    }
+    #main2 h1,
+    #main2 h2,
+    #main2 h3 {
+        line-height: 2;
+    }
+    #logo {
+        display: none;
+    }
+    body {
+        background: $element-color !important;
+   }
+   img[alt="Logo"] {
+       margin-left: -37px;
+   }
+}

@@ -1,41 +1,8 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Navigation from "../components/navigation.astro";
-import Service from '../components/service.astro';
-import data from '../data/data.json';
-const users = data.users;
-const services = data.services;
-
-let resolveUrl = (u = {url: undefined}, s = "") => {
-	if (u.url === undefined) {
-		if (s === "gemini") {
-			return `gemini://koyu.space/${users[Astro.request.url.split("?acc=")[1]].gemini}/`;
-		} else {
-			return `https://${s}.koyu.space`;
-		}
-	} else {
-		return u.url;
-	}
-}
-
-let resolveIcon = (s = undefined) => {
-	if (services[s].icon === undefined) {
-		return s;
-	} else {
-		return services[s].icon;
-	}
-}
-
-let resolveAcc = (s = undefined) => {
-	if (users[s] === undefined) {
-		return "default";
-	} else {
-		return s;
-	}
-}
+import Services from '../components/services.astro';
 ---
 
-<Navigation />
 <Layout>
     <main>
         <img src="/pb-icon.svg" alt="Logo" height="100">
@@ -44,15 +11,7 @@ let resolveAcc = (s = undefined) => {
         <br><br><br><br>
         <section>
 		<h2 id="ourservices">Our services:</h2>
-		<span>
-			{users[`${resolveAcc(Astro.request.url.split("?acc=")[1])}`]["services"].map((service) => (
-						<Service
-							url={resolveUrl(services[service], service)}
-							title={services[service]["title"]}
-							icon={resolveIcon(service)}
-						/>
-				))}
-		</span>
+		<Services />
 	</section>
         <br><br><br>
     </main>

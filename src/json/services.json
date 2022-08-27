@@ -1,0 +1,32 @@
+[
+    {
+        "url": "https://fedi.koyu.space",
+        "title": "fedi",
+        "icon": "simple-icons:pleroma"
+    },
+    {
+        "url": "https://mail.koyu.space",
+        "title": "Mail",
+        "icon": "fa:envelope"
+    },
+    {
+        "url": "https://stream.koyu.space",
+        "title": "koyu.space Stream",
+        "icon": "fa:video-camera"
+    },
+    {
+        "url": "https://xmpp.koyu.space",
+        "title": "XMPP",
+        "icon": "simple-icons:xmpp"
+    },
+    {
+        "url": "https://zecircle.xyz",
+        "title": "ZeCircle",
+        "icon": "fa:gamepad"
+    },
+    {
+        "url": "https://matrix.to/#/#koyu.space:mozilla.org",
+        "title": "Matrix",
+        "icon": "fa:comments"
+    }
+]

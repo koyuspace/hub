@@ -1,0 +1,28 @@
+@import "variables";
+
+.service {
+    font-size: 72pt !important;
+    display: inline;
+    padding: 10px;
+}
+
+.service a {
+    color: $foreground !important;
+    text-decoration: none;
+}
+
+@media(min-width:800px) {
+    #services {
+        display: inline-block;
+        width: 50%;
+        margin: 0 auto;
+    }
+}
+
+.service > a > svg {
+    height: 36pt;
+}
+
+#ourservices {
+    font-weight: 400;
+}

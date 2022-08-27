@@ -1,14 +1,13 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Navigation from "../components/navigation.astro";
 ---
 
 <style>
-body { background: #223 !important; }
+@import "../scss/variables.scss";
+body { background: $element-color !important; }
 </style>
 
 <Layout>
-    <Navigation />
     <div id="myShop" style="padding:20px;">
         Loading...
     </div>

@@ -1,7 +1,8 @@
 ---
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
-import "../css/style.css";
+import "../scss/index.scss";
+import Navigation from "../components/navigation.astro";
 ---
 <!DOCTYPE html>
 <html>
@@ -9,12 +10,12 @@ import "../css/style.css";
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width">
 	<link rel="icon" type="image/x-icon" href="/favicon.ico" />
-	<link rel="stylesheet" type="text/css" href="/style.css" />
 	<title>koyu.space Hub</title>
 	<script src="../../node_modules/bootstrap/dist/js/bootstrap.js"></script>
 </head>
 <body>
 	<script src="../ts/translations.ts"></script>
+	<Navigation />
 	<slot />
 </body>
 </html>
