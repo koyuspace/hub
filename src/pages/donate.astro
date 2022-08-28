@@ -1,5 +1,10 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import donationData from '../json/donations.json';
+
+const goal = donationData.goal;
+const donations = donationData.donations;
+let percent = (donations / goal) * 100;
 ---
 
 <Layout>
@@ -13,7 +18,7 @@ import Layout from '../layouts/Layout.astro';
         <div id="dprogress">
             <p id="annual">Current annual goal:</p>
             <div class="progress">
-                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 32.5%;background-color:var(--accent-color);">325€ / 1000€</div>
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style={`width: ${percent}%;`}>{donations}€ / {goal}€</div>
             </div>
         </div>
     </main>

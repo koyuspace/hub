@@ -1,5 +1,7 @@
+@import "variables";
+
 .button {
-    background-color: var(--accent-color)!important;
+    background-color: $accent-color !important;
     border: 10px;
     border-radius: 30px;
     color: #fff;
@@ -8,11 +10,11 @@
 }
 
 .button:hover {
-    background-color: var(--accent-color-hover)!important;
+    background-color: $accent-color-hover !important;
 }
 
 .disabled,
 .disabled:hover {
     cursor: pointer;
-    background: var(--trends-transparency) !important;
+    background: $trends-transparency !important;
 }
