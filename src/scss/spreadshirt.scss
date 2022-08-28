@@ -29,12 +29,12 @@
     text-align: left;
 }
 
-#sprd-content h4 {
-    font-size: var(--bs-body-font-size) !important;
-}
-
 .SprdMain .sprd-button {
     border-radius: 30px !important;
+}
+
+.SprdMain .sprd-button:hover {
+    background: $accent-color-hover !important;
 }
 
 .SprdMain .sprd-detail-sizes__size,
