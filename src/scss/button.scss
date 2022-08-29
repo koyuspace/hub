@@ -4,7 +4,7 @@
     background-color: $accent-color !important;
     border: 10px;
     border-radius: 30px;
-    color: #fff;
+    color: $foreground;
     text-decoration: none;
     padding: 10px;
 }
@@ -17,4 +17,8 @@
 .disabled:hover {
     cursor: pointer;
     background: $trends-transparency !important;
+}
+
+button {
+    color: $foreground !important;
 }
