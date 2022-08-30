@@ -22,3 +22,8 @@
 button {
     color: $foreground !important;
 }
+
+.button svg {
+    height: 14px;
+    margin-top: -2px;
+}
