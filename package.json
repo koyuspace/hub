@@ -9,7 +9,7 @@
     "preview": "astro preview"
   },
   "devDependencies": {
-    "astro": "^1.1.1"
+    "astro": "^1.1.2"
   },
   "dependencies": {
     "@astrojs/netlify": "^1.0.1",
@@ -18,7 +18,7 @@
     "bootstrap": "^5.2.0",
     "bootstrap-icons": "^1.9.1",
     "jquery": "^3.6.1",
-    "sass": "^1.54.5",
+    "sass": "^1.54.7",
     "xhr2": "^0.2.1"
   }
 }
