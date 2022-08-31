@@ -9,8 +9,12 @@ body {
     overflow-x: hidden;
 }
 
+a {
+    color: $accent-color;
+}
+
 a:hover {
-    color: $foreground !important;
+    color: $accent-color-hover;
 }
 
 h1,

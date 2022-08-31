@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import donationData from '../json/donations.json';
+import { Icon } from 'astro-icon';
 
 const goal = donationData.goal;
 const donations = donationData.donations;
@@ -12,8 +13,8 @@ let percent = (donations / goal) * 100;
         <h1 id="donatetext">Donate</h1>
         <div id="buttons">
             <p id="dstart">How do you want to pay?</p>
-            <a href="https://liberapay.com/bubblineyuri" class="button" target="_blank">PayPal</a>
-            <a href="https://donate.stripe.com/9AQg1BbUk5tVa7mdQQ" class="button" target="_blank">Stripe</a>
+            <a href="https://liberapay.com/bubblineyuri" class="button" target="_blank"><Icon name="simple-icons:paypal" /> PayPal</a>
+            <a href="https://donate.stripe.com/9AQg1BbUk5tVa7mdQQ" class="button" target="_blank"><Icon name="simple-icons:stripe" /> Stripe</a>
         </div><br>
         <div id="dprogress">
             <p id="annual">Current annual goal:</p>
