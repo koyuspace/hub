@@ -18,5 +18,8 @@ $.get("https://api.mcsrvstat.us/2/zecircle.xyz", (data) => {
     $("#zecirclecount").html(userIcon+" "+data.players.online);
 });
 
+$.get("https://stream.koyu.space/api/status", (data) => {
+    $("#streamcount").html(userIcon+" "+data.viewerCount);
+})
+
 $("#mailcount").html(userIcon+" 2");
-$("#streamcount").html(userIcon+" 4");
