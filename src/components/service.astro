@@ -1,10 +1,15 @@
 ---
 import { Icon } from "astro-icon";
 const { url, title, icon } = Astro.props;
+
+let userCount = title.toLowerCase().replace("verse", "").replace("koyu.space ", "")+"count";
 ---
 
 <div class="service">
     <a href={url} target="_blank" title={title}>
-        <Icon name={icon} alt={title}></i>
+        <Icon name={icon} alt={title} />
     </a>
+    <div class="usercount"><span id={userCount}></span></div>
 </div>
+
+<script src="../ts/service.ts"></script>

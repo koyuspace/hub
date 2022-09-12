@@ -2,7 +2,8 @@
 
 .service {
     font-size: 72pt !important;
-    display: inline;
+    display: inline-block;
+    vertical-align: text-top;
     padding: 10px;
 }
 
@@ -25,4 +26,9 @@
 
 #ourservices {
     font-weight: 400;
+}
+
+.usercount {
+    font-size: 12pt !important;
+    margin-top: -32px;
 }
