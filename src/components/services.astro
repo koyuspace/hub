@@ -3,7 +3,7 @@ import Service from '../components/service.astro';
 import services from '../json/services.json';
 ---
 
-<span>
+<span style="text-align: center;">
     {services.map((service) => (
         <Service
             url={service.url}
