@@ -71,6 +71,15 @@ main {
     margin-top: 40px;
 }
 
+footer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: #223;
+    border-top-left-radius: 30px;
+    padding: 15px;
+}
+
 @media(min-width:800px) {
     #tagline {
         width: 50%;
@@ -89,23 +98,23 @@ main {
     #logo {
         display: none;
     }
-   img[alt="Logo"] {
-       margin-left: -37px;
-   }
-   main {
-    display: block;
-    width: 70%;
-    margin: 0 auto;
-    margin-top: 20px;
-    border-radius: 20px;
-   }
+    img[alt="Logo"] {
+        margin-left: -37px;
+    }
+    main {
+        display: block;
+        width: 70%;
+        margin: 0 auto;
+        margin-top: 20px;
+        border-radius: 20px;
+    }
 }
 
-footer {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    background: #223;
-    border-top-left-radius: 30px;
-    padding: 15px;
+@media(max-width:800px) {
+    img {
+        width: 100%;
+    }
+    footer {
+        display: none;
+    }
 }
