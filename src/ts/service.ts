@@ -17,6 +17,9 @@ function getUsers() {
     $.get("https://stream.koyu.space/api/status", (data) => {
         $("#streamcount").html(userIcon+" "+data.viewerCount);
     })
+    $.post("https://events.koyu.space/graphiql", { query: "query { events { total } }" }, (data) => {
+        $("#eventscount").html(userIcon+" "+data.data.events.total);
+    });
     $("#mailcount").html(userIcon+" 2");
 }
 
