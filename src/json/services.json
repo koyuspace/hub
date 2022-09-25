@@ -27,11 +27,11 @@
     {
         "url": "https://matrix.to/#/#koyu.space:mozilla.org",
         "title": "Matrix",
-        "icon": "fa:comments"
+        "icon": "cib:matrix"
     },
     {
         "url": "https://events.koyu.space",
         "title": "koyu.space Events",
-        "icon": "fa:calendar"
+        "icon": "arcticons:mobilizon"
     }
 ]
