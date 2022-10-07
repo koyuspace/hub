@@ -1,8 +1,8 @@
 [
     {
-        "url": "https://fedi.koyu.space",
+        "url": "https://sns.koyu.space",
         "title": "Fediverse",
-        "icon": "simple-icons:pleroma"
+        "icon": "fa:share-alt"
     },
     {
         "url": "https://mail.koyu.space",
