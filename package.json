@@ -9,7 +9,7 @@
     "preview": "astro preview"
   },
   "devDependencies": {
-    "astro": "^1.4.6"
+    "astro": "^1.5.1"
   },
   "dependencies": {
     "@popperjs/core": "^2.11.6",

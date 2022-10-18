@@ -8,19 +8,27 @@ body { background: $element-color !important; }
 </style>
 
 <Layout>
-    <div id="myShop" style="padding:20px;">
-        Loading...
+    <div id="main3">
+        <div id="myShop">
+            Loading...
+        </div>
+
+        <script is:inline>
+            var spread_shop_config = {
+            shopName: 'koyuspace',
+            prefix: 'https://koyuspace.myspreadshop.de',
+            baseId: 'myShop'
+            };
+        </script>
+
+        <script type="text/javascript" src="https://koyuspace.myspreadshop.de/shopfiles/shopclient/shopclient.nocache.js"></script>
     </div>
-
-    <script is:inline>
-        var spread_shop_config = {
-        shopName: 'koyuspace',
-        prefix: 'https://koyuspace.myspreadshop.de',
-        baseId: 'myShop'
-        };
-    </script>
-
-    <script type="text/javascript" src="https://koyuspace.myspreadshop.de/shopfiles/shopclient/shopclient.nocache.js"></script>
 </Layout>
 
 <script src="../ts/shop.ts"></script>
+
+<style>
+    body {
+        background: #223 !important;
+    }
+</style>

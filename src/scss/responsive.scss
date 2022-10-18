@@ -1,0 +1,47 @@
+@media(min-width:800px) {
+    body {
+        background: url(/bg.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    #tagline {
+        width: 50%;
+        margin: 0 auto;
+        margin-top: 40px;
+    }
+    #main2 {
+        width: 70%;
+        margin: 0 auto;
+        margin-top: 40px;
+        border-radius: 20px;
+    }
+    #main2 h1,
+    #main2 h2,
+    #main2 h3 {
+        line-height: 2;
+    }
+    #logo {
+        display: none;
+    }
+    img[alt="Logo"] {
+        margin-left: -37px;
+    }
+    main {
+        display: block;
+        width: 70%;
+        margin: 0 auto;
+        margin-top: 20px;
+        border-radius: 20px;
+    }
+}
+
+@media(max-width:800px) {
+    img {
+        width: 100%;
+    }
+    footer {
+        display: none;
+    }
+}
