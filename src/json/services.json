@@ -33,5 +33,10 @@
         "url": "https://events.koyu.space",
         "title": "koyu.space Events",
         "icon": "fa:cube"
+    },
+    {
+        "url": "https://cloud.koyu.space",
+        "title": "koyu.space Cloud",
+        "icon": "simple-icons:nextcloud"
     }
 ]

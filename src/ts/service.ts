@@ -24,6 +24,7 @@ function getUsers() {
         $("#eventscount").html(calendarIcon+" "+data.data.events.total);
     });
     $("#mailcount").html(userIcon+" 2");
+    $("#cloudcount").html(userIcon+" 1");
 }
 
 getUsers();
